@@ -8,9 +8,10 @@ const port = process.env.PORT || 8080;
 
 // middleware
 app.use(express.json());
+// BEWARE OF THE FORWARD SLASH IN THE ORIGIN URL
 app.use(
   cors({
-    origin: ["http://localhost:5173/"],
+    origin: ["http://localhost:5173"],
     credentials: true,
   })
 );
