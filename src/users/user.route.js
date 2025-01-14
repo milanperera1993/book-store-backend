@@ -22,7 +22,7 @@ router.post("/admin", async (req, res) => {
       { expiresIn: "1h" }
     );
     return res.status(200).json({
-      message: "Authentication sucessful",
+      message: "Authentication successful",
       token,
       user: {
         username,
